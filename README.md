@@ -82,3 +82,20 @@ como máximo el día Martes 21 de Abril a las 23:59 PM.
 Ayuda
 --
 *   [Comandos GitHub](recursos/git-cheat-sheet-education.pdf)
+
+## Build
+
+### Deps
+
+* `Ubuntu >= 19.10`
+* `gcc >= 9.2.1`
+* `CMake >= 3.13.0`
+
+```bash
+git clone https://github.com/cs1103-lab2-01-2020-1/pooii-tarea-2-entrega-21-04-otreblan
+cd pooii-tarea-2-entrega-21-04-otreblan
+mkdir build
+cd build
+cmake ..
+make -j$(nproc)
+```
