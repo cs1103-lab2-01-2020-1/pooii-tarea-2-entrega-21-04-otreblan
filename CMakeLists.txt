@@ -29,7 +29,7 @@ cmake_policy(SET CMP0076 NEW)
 include(GNUInstallDirs)
 include(FindPkgConfig)
 
-# The library itself
+# The 2 first problems
 add_executable(${PROJECT_NAME})
 
 # Version for the library symlinks
@@ -40,6 +40,20 @@ set_target_properties(${PROJECT_NAME}
 
 # Headers
 target_include_directories(${PROJECT_NAME}
+	PRIVATE ${PROJECT_SOURCE_DIR}/include
+)
+
+# The 2 first problems
+add_executable(pairVec)
+
+# Version for the library symlinks
+set_target_properties(pairVec
+	PROPERTIES
+		CXX_STANDARD 17
+)
+
+# Headers
+target_include_directories(pairVec
 	PRIVATE ${PROJECT_SOURCE_DIR}/include
 )
 
@@ -79,5 +93,10 @@ endif()
 
 # Install target
 install(TARGETS ${PROJECT_NAME}
+	DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
+
+# Install target
+install(TARGETS pairVec
 	DESTINATION ${CMAKE_INSTALL_BINDIR}
 )

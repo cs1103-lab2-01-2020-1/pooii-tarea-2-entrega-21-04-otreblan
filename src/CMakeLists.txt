@@ -20,3 +20,8 @@ target_sources(${PROJECT_NAME}
 		josephus.cpp
 		pairSort.cpp
 )
+
+target_sources(pairVec
+	PRIVATE
+		pairVec.cpp
+)
