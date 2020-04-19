@@ -1,4 +1,5 @@
 sudo: required
+language: minimal
 services:
     - docker
 script:
@@ -11,10 +12,10 @@ script:
 deploy:
     provider: releases
     api_key:
-        secure: "Sw66OsJhyHxqcZ97vrkRBosS8sxjN22scg2EGfXk/GKdmD4eIIBF6LxH+/5mwSYncqDRAm68YzhWW/+6SuwFWmZkVdz1UYnzTufYWAkoqW/KeMttJnrcMiy57S4r8AkEdPDVV42RhIQkJUtGRb6ylvAQctqjRpKAxEDl9ckkGm55W1OGS7GnMWxiqX0ZiZGGn4bdNgRwfPn/FqGrLm1i9IuYz7PMK4c63s8JY4/SfBV28iyf+30sameoFVo5xqofcKnOR3CBRtgUSwoU52iAWtXJsV1EyvOw+Lkyo9KBxT79qYmueTPjapgr1CQQgJMHZS4x+gHCAR1iboOAdX8Kj1m18pqbfaw307CDYDQXDmlLCJQO5fohXULXgW0SFKdLqDZQB7gHPJSBdW1YZ2qU7zywIfA/KnHro5mAdKxRn1OZApHpq285hAh2/qx4Nj7gvK1F7B6EpsBWdk88OKbZmnKrQksvavVzLKVBUZLLrBb6S3rM5Gc9bbQnhKWae7U1P/2+S/YoQErPROS8fr7d7b53FtkwE6OqYby4LEoDQulQb0HpgkpvnKzC+Wvm+ybTRlqZIxloq9w+t4IByP4Nvrz4gv7PVuhqcH4APdFr6X2/fOE0WI7H7OsEPIzh418jn6/zXNhwZC7SWHwsg5KicWXagLN0TO7UBN4Dn1TUPBA="
+        secure: "GGYXQM0aYXWi8yvvS6Z9jgnFvrYvIc5do8BKV9Wu+PvbZOiCE2lvw42dDNbsG8FQwh+4Hjdzk92m1YjIeVyX7VCAWpMCETlKFJ3t1bY8hbq2Kx7mnGgqthBGdaM48kasa5dfvjyStXrs59Rzf40+RK/OVzL6j3rro1KRXdrmKLQR+UJBHTydxtXFg3QT1rVA7Bpfs1l0/y1HCVUG0Ysw0A4vFv9W8WG+vGecLxU6ykxSTyfrXg/SVYY6YcEbR9oWrHUav0aTAaAC78ywoPu3gR+axBlaha34vXkImuj6+lT+v1H8PQvtZe+akzMpxCa4J3KWv6LcuiX8S0/C7HOznzRzZnbCM4cWd2Q4oxQkGSD76xw1R9vIN5s5AOcbf35/34C1FCUgwkl2HZXtYXdroIVQTkH+FYYx86L9drk/JY3eKTMNTZV3wjHXp/qb4ovZinMywhPo6IFcIjoxedp7doLI2onHumndr0c8g3V7L0y7L4H/xLSJ2Ye7w6fsevDUS/UUqQraxGTQ56htMGJOcTBTHq5VaCKpwAX2gwgosV4KUogcKamP6Q4xHYpTgkQrlonVHEGodsiZigOngViiy+HSeVIdy7+wKYsBDGhcYvsxxNf4/9KVYbiZciHLdS8L8MQt10rvBpMp0fTWtFaZx9+CMGXAyJbdAkI33e7Y/YA="
     file_glob: true
     file: "*.pkg.tar.*"
     skip_cleanup: true
     on:
-        repo: cs1103-lab2-01-2020-1/pooii-tarea-2-entrega-21-04-otreblan
+        repo: otreblan/pooii-tarea-2-entrega-21-04-otreblan
         tags: true

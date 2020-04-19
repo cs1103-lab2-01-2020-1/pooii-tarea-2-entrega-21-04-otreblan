@@ -1,5 +1,7 @@
 # Programación Orientado a Objetos II
 
+[![Build Status](https://travis-ci.com/otreblan/pooii-tarea-2-entrega-21-04-otreblan.svg?branch=master)](https://travis-ci.com/otreblan/pooii-tarea-2-entrega-21-04-otreblan)
+
 ## Tarea 2
 
 1.- Implementar Josephus Problem usando un contenedor simple y explicar paso por paso cada 
