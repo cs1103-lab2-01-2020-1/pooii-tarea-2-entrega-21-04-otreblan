@@ -19,6 +19,7 @@ target_sources(${PROJECT_NAME}
 		main.cpp
 		josephus.cpp
 		pairSort.cpp
+		agenda.cpp
 )
 
 target_sources(pairVec
