@@ -26,7 +26,7 @@ todos los 1s. De forma similar con 8 y 3.
 el orden es el orden normal creciente, de menor a mayor.
 
 
-Salida: 2, 2, 1, 8, 8, 3, 5, 6, 7, 9
+Salida: 2, 2, 1, 1, 8, 8, 3, 5, 6, 7, 9
 
 3.- Dado dos arrays; arr1 y arr2 de tamaño N. La tarea es hacer pares
 que contengan valores correspondientes: (arr1[0], arr2[0]), (arr1[1], arr2[1]), ...
