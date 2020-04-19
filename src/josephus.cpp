@@ -14,14 +14,4 @@
 // You should have received a copy of the GNU General Public License
 // along with hello.  If not, see <http://www.gnu.org/licenses/>.
 
-#include <iostream>
-
-// Display help
-void help(char**);
-
-int main()
-{
-	std::cout << "Hello\n";
-	return 0;
-}
-
+#include <josephus.hpp>
