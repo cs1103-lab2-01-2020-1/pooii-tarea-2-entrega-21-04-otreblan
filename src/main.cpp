@@ -15,13 +15,13 @@
 // along with hello.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <iostream>
-
-// Display help
-void help(char**);
+#include <josephus.hpp>
 
 int main()
 {
-	std::cout << "Hello\n";
+	std::cout
+		<< "Josephus(41, 3)\n"
+		<< josephus(41, 3) << '\n';
 	return 0;
 }
 

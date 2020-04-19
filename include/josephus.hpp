@@ -15,3 +15,5 @@
 // along with hello.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
+
+int josephus(int n, int k);
