@@ -25,3 +25,8 @@ target_sources(pairVec
 	PRIVATE
 		pairVec.cpp
 )
+
+target_sources(frecVec
+	PRIVATE
+		frecVec.cpp
+)

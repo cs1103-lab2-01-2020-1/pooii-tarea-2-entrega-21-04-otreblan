@@ -43,7 +43,6 @@ target_include_directories(${PROJECT_NAME}
 	PRIVATE ${PROJECT_SOURCE_DIR}/include
 )
 
-# The 2 first problems
 add_executable(pairVec)
 
 # Version for the library symlinks
@@ -54,6 +53,19 @@ set_target_properties(pairVec
 
 # Headers
 target_include_directories(pairVec
+	PRIVATE ${PROJECT_SOURCE_DIR}/include
+)
+
+add_executable(frecVec)
+
+# Version for the library symlinks
+set_target_properties(frecVec
+	PROPERTIES
+		CXX_STANDARD 17
+)
+
+# Headers
+target_include_directories(frecVec
 	PRIVATE ${PROJECT_SOURCE_DIR}/include
 )
 
@@ -98,5 +110,10 @@ install(TARGETS ${PROJECT_NAME}
 
 # Install target
 install(TARGETS pairVec
+	DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
+
+# Install target
+install(TARGETS frecVec
 	DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
