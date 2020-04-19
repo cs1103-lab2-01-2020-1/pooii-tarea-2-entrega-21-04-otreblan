@@ -14,14 +14,6 @@
 // You should have received a copy of the GNU General Public License
 // along with hello.  If not, see <http://www.gnu.org/licenses/>.
 
-#include <iostream>
-#include <josephus.hpp>
+#pragma once
 
-int main()
-{
-	std::cout
-		<< "Josephus(41, 3)\n"
-		<< josephus(41, 3) << '\n';
-	return 0;
-}
-
+int josephus(int n, int k);
