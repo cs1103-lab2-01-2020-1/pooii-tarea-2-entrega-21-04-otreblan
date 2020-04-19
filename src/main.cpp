@@ -19,6 +19,7 @@
 
 #include <josephus.hpp>
 #include <pairSort.hpp>
+#include <agenda.hpp>
 
 int main()
 {
@@ -39,6 +40,47 @@ int main()
 		std::ostream_iterator<int>(std::cout, " "));
 
 	std::cout << '\n';
+	std::cout << '\n';
+
+	Agenda agenda;
+
+	agenda.insertar_evento("1", "01", "algo");
+	agenda.insertar_evento("1", "02", "algo");
+	agenda.insertar_evento("1", "03", "algo");
+	agenda.insertar_evento("1", "04", "algo");
+	agenda.insertar_evento("1", "05", "algo");
+	agenda.insertar_evento("1", "06", "algo");
+	agenda.insertar_evento("1", "07", "algo");
+	agenda.insertar_evento("1", "08", "algo");
+	agenda.insertar_evento("1", "09", "algo");
+	agenda.insertar_evento("1", "10", "algo");
+
+	agenda.insertar_evento("2", "01", "algo");
+	agenda.insertar_evento("2", "02", "algo");
+	agenda.insertar_evento("2", "03", "algo");
+	agenda.insertar_evento("2", "04", "algo");
+	agenda.insertar_evento("2", "05", "algo");
+	agenda.insertar_evento("2", "06", "algo");
+	agenda.insertar_evento("2", "07", "algo");
+	agenda.insertar_evento("2", "08", "algo");
+	agenda.insertar_evento("2", "09", "algo");
+	agenda.insertar_evento("2", "10", "algo");
+
+	agenda.insertar_evento("3", "01", "algo");
+	agenda.insertar_evento("3", "02", "algo");
+	agenda.insertar_evento("3", "03", "algo");
+	agenda.insertar_evento("3", "04", "algo");
+	agenda.insertar_evento("3", "05", "algo");
+	agenda.insertar_evento("3", "06", "algo");
+	agenda.insertar_evento("3", "07", "algo");
+	agenda.insertar_evento("3", "08", "algo");
+	agenda.insertar_evento("3", "09", "algo");
+	agenda.insertar_evento("3", "10", "algo");
+
+
+	agenda.eliminar_eventos("1", "03", "3", "07");
+
+	std::cout << agenda;
 
 	return 0;
 }
